@@ -131,8 +131,12 @@ export default function BlogPost() {
 
       {/* Author Box Widget */}
       <div className="author-box">
-        <div className="author-box-avatar" aria-hidden="true" style={{ fontSize: '1.5rem', fontWeight: '800', fontFamily: 'Georgia, serif' }}>
-          JM
+        <div className="author-box-avatar" aria-hidden="true" style={{ overflow: 'hidden' }}>
+          <img 
+            src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Jean Marie Kemery-Owen" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
         </div>
         <div className="author-box-info">
           <h4>Jean Marie Kemery-Owen</h4>

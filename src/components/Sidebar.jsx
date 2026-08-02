@@ -30,8 +30,12 @@ export default function Sidebar() {
     <aside className="sidebar" id="sidebar">
       {/* Widget 1: Author Card */}
       <section className="widget author-widget">
-        <div className="author-avatar" aria-hidden="true" style={{ fontSize: '2rem', fontWeight: '800', fontFamily: 'Georgia, serif' }}>
-          JM
+        <div className="author-avatar" aria-hidden="true" style={{ overflow: 'hidden' }}>
+          <img 
+            src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Jean Marie Kemery-Owen" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
         </div>
         <h3 className="author-name">Jean Marie Kemery-Owen</h3>
         <p className="author-title">Administrative Maestro</p>
