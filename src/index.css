@@ -1,6 +1,3 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 :root {
   --primary: #D9531E;
   --primary-hover: #b84114;
@@ -10,8 +7,8 @@
   --sidebar-bg: #F5EFE6;
   --card-bg: #FFFFFF;
   --border-color: #E5DEC9;
-  --font-headers: Georgia, 'Playfair Display', serif;
-  --font-body: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-headers: Georgia, Times, "Times New Roman", serif;
+  --font-body: Georgia, Times, "Times New Roman", serif;
   --max-width: 1200px;
   --transition: all 0.2s ease-in-out;
 }
@@ -1184,6 +1181,18 @@ p {
     display: block;
   }
 
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2, .post-title {
+    font-size: 1.3rem !important;
+  }
+
+  h3 {
+    font-size: 1.15rem !important;
+  }
+
   .site-title {
     font-size: 1.3rem;
   }
@@ -1217,6 +1226,18 @@ p {
 
 /* Extra small devices (under 480px wide) */
 @media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem !important;
+  }
+
+  h2, .post-title {
+    font-size: 1.15rem !important;
+  }
+
+  h3 {
+    font-size: 1.05rem !important;
+  }
+
   .site-title {
     font-size: 1.1rem;
   }
