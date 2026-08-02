@@ -1097,6 +1097,29 @@ p {
   margin-bottom: 0;
 }
 
+/* Form elements - set full width to fit parents on mobile */
+.form-control {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 0px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background-color: var(--light-bg);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #fff;
+}
+
+/* Flexbox and Grid column boundaries to prevent stretch overflow */
+.main-content-column {
+  min-width: 0;
+  width: 100%;
+}
+
 /* Form Row Grid - stacks by default, splits on desktop */
 .form-row-grid {
   display: grid;
@@ -1162,7 +1185,11 @@ p {
   }
 
   .site-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .site-tagline {
+    font-size: 0.75rem;
   }
   
   .layout-grid {
@@ -1185,5 +1212,26 @@ p {
 
   .page-link-next .page-link-title {
     text-align: left !important;
+  }
+}
+
+/* Extra small devices (under 480px wide) */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.1rem;
+  }
+
+  .site-tagline {
+    font-size: 0.7rem;
+    white-space: normal;
+  }
+
+  .header-container {
+    padding: 15px 10px;
+  }
+
+  .timeline-tab-btn {
+    padding: 5px 8px;
+    font-size: 0.75rem;
   }
 }
