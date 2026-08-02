@@ -224,7 +224,7 @@ export default function BlogPost() {
               ></textarea>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+            <div className="form-row-grid">
               <div className="form-group">
                 <label htmlFor="author-name">Name *</label>
                 <input
